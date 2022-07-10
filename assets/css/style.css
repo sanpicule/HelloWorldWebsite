@@ -536,5 +536,54 @@ form > .section-button > button {
 
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 60px;
+  right: 0;
+}
+
+.mobile-menu__main {
+  padding: 0;
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.mobile-menu__item {
+  -webkit-transform: none;
+          transform: none;
+  display: block;
+  -webkit-transform: translate3d(0, 0, -1000px);
+          transform: translate3d(0, 0, -1000px);
+  padding: 0 40px;
+  -webkit-transition: opacity .2s, -webkit-transform .3s;
+  transition: opacity .2s, -webkit-transform .3s;
+  transition: transform .3s, opacity .2s;
+  transition: transform .3s, opacity .2s, -webkit-transform .3s;
+}
+
+.mobile-menu__item:hover {
+  cursor: pointer;
+}
+
+.mobile-menu__link {
+  display: block;
+  margin-top: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.main-title {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.sub-title {
+  display: block;
+  font-size: 14px;
+  color: #535353;
+}
+
 
 
